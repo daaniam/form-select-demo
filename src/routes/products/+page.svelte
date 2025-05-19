@@ -42,7 +42,7 @@
 				{#await showProducts}
 					<option selected>Loading...</option>
 				{:then products}
-					<label for="product-select">Product category:</label>
+					<label for="product-select">Product:</label>
 					<select class="select" name="product-select" bind:value={$form.product_id}>
 						{#each products as p}
 							<option value={p.id}>{p.name}</option>
